@@ -79,27 +79,17 @@ Built using **HTML, CSS, Bootstrap, JavaScript, MySQL, Python, Django** with **R
 
 ## 📂 Project Structure
 
-PALKEAR_ICECREAM/
-│
-├── env/                    # Virtual environment folder 
-│   ├── Lib/                # Contains Python libraries for the virtual environment
-│   ├── Scripts/            # Contains scripts for activating/deactivating the virtual environment
-│   └── pyvenv.cfg          # Configuration file for the virtual environment
-│
-├── palekar_icecream/        # Main Django Project folder containing project settings
-│
-├── iceapp/                  # Custom Django app for ice cream ordering functionality
-│
-├── media/                   # Folder for uploaded files (user-uploaded images or media)
-│
-├── static/                  # Contains static files such as CSS, JS, and images for frontend
-│
-├── templates/               # Folder for HTML templates used to render frontend pages
-│
-├── db.sqlite3               # Database file (if you're using SQLite for local development)
-│
-├── manage.py                # Django project management script (for running server, migrations, etc.)
-│
-├── .gitignore               # Specifies files and directories that Git should ignore
-│
-└── README.md                # Project documentation (this file)
+
+## Key Folders and Files:
+
+- **`env/`**: This directory contains the virtual environment for the project. It's used to isolate project dependencies.
+- **`palekar_icecream/`**: This folder contains the main settings and configuration files for the Django project.
+- **`iceapp/`**: The Django app that handles the functionality related to ice cream ordering, including models, views, and URLs.
+- **`media/`**: All user-uploaded media files (e.g., images of ice cream flavors) are stored here.
+- **`static/`**: Contains the static files (e.g., CSS, JS, images) used for the front end.
+- **`templates/`**: HTML templates for rendering the user interface.
+- **`db.sqlite3`**: If you're using SQLite, this is your database file. You may want to configure it for production or use another database in the future.
+- **`manage.py`**: A utility script for managing various Django tasks like running the server or applying migrations.
+- **`.gitignore`**: Specifies which files and directories should be ignored by Git, such as virtual environments or compiled Python files.
+- **`README.md`**: The file you're currently editing, which contains project documentation.
+
