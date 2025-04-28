@@ -1,0 +1,577 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+        <!---------------------------------------------------------------- Carousel Start ------------------------------------------------------------------------------>
+        <div id="carouselExampleSlidesOnly" class="carousel slide"
+            data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'img/banner.png' %}"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'img/banner2.jpg' %}"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'img/banner3.jpg' %}"
+                        alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------------------------------- Carousel End ------------------------------------------------------------------------------>
+        <!---------------------------------------------------------------- Categories Start ------------------------------------------------------------------------------>
+        <div>
+            <div class="category">
+                <h1>&#8592; Our Categories &#8594;</h1>
+            </div>
+            <div class="superpremium">
+                <img class="img1" src="{% static 'img/sea_salt_caramel.jpg' %}"
+                    width="50%" alt="sea_salt_caramel">
+                <img class="img2" src="{% static 'img/Super-Premium.png' %}"
+                    width="50%" alt="Super-Premium">
+            </div>
+            <div class="superpremium">
+                <img class="img1"
+                    src="{% static 'img/International-Classic.png' %}"
+                    width="50%" alt="International-Classic">
+                <img class="img2" src="{% static 'img/International.png' %}"
+                    width="50%" alt="International">
+            </div>
+            <div class="superpremium">
+                <img class="img1" src="{% static 'img/Sugarless.png' %}"
+                    width="50%" alt="Sugarless.png">
+                <img class="img2" src="{% static 'img/Sugarless-Coconut.png' %}"
+                    width="50%" alt="Sugarless-Coconut1.png">
+            </div>
+            <!-- <div class="superpremium">
+        <img class="img1" src="img/French-Vanilla.png" width="50%" alt="Super-Premium">
+        <img class="img2" src="{% static 'img/Strawberry_cheesecake.png' %}" width="50%" alt="sea_salt_caramel">
+    </div>     -->
+
+        </div>
+
+        <!---------------------------------------------------------------- Categories End ------------------------------------------------------------------------------>
+        <!---------------------------------------------------------------- Fruit N Nut Start ------------------------------------------------------------------------------>
+        <div class="container">
+            <br>
+            <hr class="border border-light border-2 opacity-50">
+            <h1 class="fruits">&#8592; Fruits N Nut &#8594;</h1>           
+            <br>
+            <!-----------for large screen----------->
+            <div id="largeScreencarousel"
+                class="carousel carousel-dark slide d-none d-md-none d-lg-block">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#largeScreencarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#largeScreencarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!---------For Medium Screen----------->
+            <div id="mediumScreencarousel"
+                class="carousel carousel-dark slide d-none d-md-block d-lg-none">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#mediumScreencarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#mediumScreencarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-----------For Small Screen---------->
+            <div id="smallScreencarousel"
+                class="carousel carousel-dark slide d-block d-md-none d-lg-none">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="cards">
+
+                            <div class="card">
+                                <img
+                                    src="{% static 'img/Strawberry_cheesecake.png' %}"
+                                    alt="Product Image">
+                                <div class="card-body">
+                                    <h4>Tender Coconut</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#smallScreencarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#smallScreencarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="btn1">
+            <a class="viewmore-button" href="/fruitnnut">
+                <span class="text-2">View More</span>
+            </a>
+        </div>
+        <br>
+        <!---------------------------------------------------------------- Fruit N Nut End ------------------------------------------------------------------------------>
+        <!---------------------------------------------------------------- Order Now Start ------------------------------------------------------------------------------>
+        <section class="order-now">
+            <h1 class="fruits">&#8592; Order Now &#8594;</h1>
+            <div class="logos">
+                <a target="_blank" href="https://dotpe.in/"><img src="{% static 'img/DotPe.png' %}" alt="DotPe"></a>
+                <a target="_blank" href="https://www.swiggy.com/"><img src="{% static 'img/Swiggy.png' %}" alt="Swiggy"></a>
+                <a target="_blank" href="https://www.zomato.com/"><img src="{% static 'img/Zomato.png' %}" alt="Zomato"></a>
+                <a target="_blank" href="https://blinkit.com/"><img src="{% static 'img/BlinkIt.png' %}" alt="Blinkit"></a>
+                <a target="_blank" href="https://www.swiggy.com/instamart"><img src="{% static 'img/SwiggyInstamart.png' %}" alt="Swiggy Instamart"></a>
+                <a target="_blank" href="https://www.amazon.in/"><img src="{% static 'img/Amazon.png' %}" alt="Amazon"></a>
+                <a target="_blank" href="https://www.bigbasket.com/"><img src="{% static 'img/BigBasket.png' %}" alt="BigBasket"></a>
+                <a target="_blank" href="https://www.zeptonow.com/"><img src="{% static 'img/Zepto.png' %}" alt="Zepto"></a>
+                <a target="_blank" href="https://gofrogo.in/"><img src="{% static 'img/Frogo.png' %}" alt="Frogo"></a>
+            </div>
+        </section>
+        <!---------------------------------------------------------------- Order Now End ------------------------------------------------------------------------------>
+        <!---------------------------------------------------------------- Img & Social Media Start ------------------------------------------------------------------------------>
+        <div class="section1">
+            <section class="image-section">
+                <div class="image-container">
+                    <img src="{% static '/img/Chakra.png' %}" alt="Ice Cream">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><img
+                            src="{% static '/img/facebook.png' %}"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img
+                            src="{% static 'img/instagram.png' %}"
+                            alt="Instagram"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img
+                            src="{% static 'img/youtube.png' %}"
+                            alt="YouTube"></a>
+                </div>
+            </section>
+        </div>
+        <!---------------------------------------------------------------- Img & Social Media End ------------------------------------------------------------------------------>
+        {% endblock 'main' %}

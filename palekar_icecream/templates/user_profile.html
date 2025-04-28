@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- User Profile Start ------------------------------------------------------------------------------>
+<form action method="post">
+    
+    <div class="col-md-6 mx-auto p-5 shadow border m-4">
+        <h3 class="text-start">Profile Information :-</h3>
+        {% for i in data %}
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <label for="fname">First Name :</label>
+                <input type="text" class="form-control mt-4" name="fname"
+                    placeholder="First Name"
+                    id="fname" value="{{i.first_name}}" readonly>
+            </div>
+            <div class="col-md-6">
+                <label for="lname">Last Name :</label>
+                <input type="text" class="form-control mt-4" name="lname"
+                    placeholder="Last Name" id="lname"
+                    value="{{i.last_name}}" readonly>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="name">Email</label>
+        </div>
+        <div class="input-group">
+            <input type="email" class="form-control" id="floatingName"
+                placeholder="abc@gmail.com" name="email" value="{{i.email}}"
+                readonly>
+        </div>
+        <div class="input-group">
+            <label for="name">Contact Number :</label>
+        </div>
+        {% endfor %}
+        {% if size %}
+        <div class="input-group">
+            <input type="text" class="form-control" id="floatingName"
+                placeholder="Enter Mobile Number"
+                readonly>
+        </div>
+        <div class="input-group">
+            <label for="name">Address :</label>
+        </div>
+        <div class="input-group">
+            <textarea name="address" class="form-control"></textarea>
+        </div>
+        {% else %}
+        {% for i in data1 %}
+        <div class="input-group">
+            <input type="text" class="form-control" id="floatingName"
+                value="{{i.mobile}}"
+                readonly>
+        </div>
+        <div class="input-group">
+            <label for="name">Address :</label>
+        </div>
+        <div class="input-group">
+            <textarea name="address" class="form-control" value
+                readonly>{{i.address}}</textarea>
+        </div>
+        {% endfor %}
+        {% endif %}
+        <div class="input-group d-flex justify-content-center mt-4">
+            <a href="/edit_user_profile" class="btn btn-outline-secondary"
+                id="floatingName">Edit</a>
+        </div>
+    </div>
+</form>
+
+<!---------------------------------------------------------------- User Profile End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

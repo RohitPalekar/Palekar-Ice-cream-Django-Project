@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Login Start ------------------------------------------------------------------------------>
+<section class="loged">
+    <div class="container-fluid">
+        <div class="row login-container">
+            <div
+                class="col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                <!-- <img src="{% static 'img/banner.png' %}" alt="Illustration" class="illustration img-fluid"> -->
+            </div>
+            <div
+                class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="login-form">
+                    <h2 class="text-center">Welcome back</h2>
+                    <p class="text-center">Login to your account</p>
+                    {% if errmsg %}
+                    <div class="alert alert-danger"
+                        role="alert">{{errmsg}}</div>
+                    {% endif %}
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control"
+                                name="username" placeholder="xyz">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control"
+                                    name="password"
+                                    placeholder="Enter password">
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-block">LOGIN</button>
+                    </form>
+                    <p class="text-center mt-3">Don't have an account? <a
+                            href="/signup" class="text-primary-custom">Sign
+                            Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------------------------- Login End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Cart Start ------------------------------------------------------------------------------>
+<div class="container shopping-cart">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h2 class="text-center">My Order History</h2>
+            {% for i in data %}
+            <div class="row">
+                <div class="cart-item row">
+                    <div class="col-md-2">
+                        <img src="{{i.iid.pic.url}}"
+                            alt="Shirt" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <h5>{{i.iid.iname}}</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group d-flex flex-column align-items-center"> 
+                            <label for>Quantity </label>                           
+                            <input type="text" class="text-center mt-1"
+                                value="{{i.qty}}"  style="width:50px;" disabled>                            
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column align-items-center">
+                        <label for>Price </label>
+                        <p> &#8377; {{i.amt}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- <a href="/" class="btn btn-link">&larr; Back to shop</a> -->
+        </div>
+
+    </div>
+</div>
+
+<!---------------------------------------------------------------- Cart End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

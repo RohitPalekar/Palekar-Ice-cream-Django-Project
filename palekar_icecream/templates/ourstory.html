@@ -1,0 +1,101 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Our Story Start ------------------------------------------------------------------------------>
+ <section class="our-story">
+    <div class="col-md-6  content">
+        <h1>Our Story</h1>
+        <p>Good taste is important. Honest ingredients, even more so.
+            Which is why, at Palekar,s Ice Creams, we make it our mission to
+            bring you the most delightful of ice creams, ranging from
+            the exotic to the innovative.</p>
+        <p>We have crafted flavours ranging from fruit and dry fruit
+            variations like Tender Coconut, Alphonso Mango, Dry Fruit
+            Overload, Roasted Almonds to international flavors such as
+            Mediterranean Sea Salted Caramel, Madagascar Chocolate,
+            French Vanilla, and those inspired by Indian sweetmeats such
+            as Gulab Jamun, Sheer Khurma, Til Gud, and Gajar Halwa, to
+            name a few.</p>
+        <p>In our entire range of offerings, we use only milk and 100%
+            ingredients. No artificial flavors, no coloring agents and
+            zero preservatives: 'Honestly' is not just our motto, it’s
+            also our promise. Through the use of milk and our
+            hand-crafted production process, we bring you a range of
+            enthralling tastes that you shall find only with Palekar,s Ice
+            Creams.</p>
+    </div>
+    <div class="col-md-6"></div>
+</section>
+<!---------------------------------------------------------------- Our Story End ------------------------------------------------------------------------------>
+<!---------------------------------------------------------------- Our Process Start ------------------------------------------------------------------------------>
+<section class="our-process">
+    <h1>Our Process</h1>
+    <p>
+        All ingredients are hand-picked, the fruits are manually cleaned
+        and whole fruits are used in production.
+        That’s the reason why we call it 'Handcrafted Ice Creams’. Since
+        there are no preservatives in our ice cream,
+        the shelf life of our product is just 45 days. When compared
+        with other brands, which have a longer shelf life,
+        it is a herculean effort to manufacture, distribute and sell our
+        ice cream across the nation within 45 days.
+        With more experience and better processes, we have been
+        successful in overcoming various challenges to bring Palekar
+        Icecream to you,
+        making every challenge worth it and after tasting Palekar
+        Icecream you surely would agree!
+    </p>
+</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h1>&#8592; Gallery &#8594;</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary1.png' %}" alt="Ice Cream 1">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary3.png' %}" alt="Ice Cream 2">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary4.png' %}" alt="Ice Cream 3">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary6.png' %}" alt="Ice Cream 4">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary5.png' %}" alt="Ice Cream 5">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 gallery-item">
+            <img src="{% static 'img/gallary2.png' %}" alt="Ice Cream 6">
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------- Our Process End ------------------------------------------------------------------------------>
+<!---------------------------------------------------------------- Img & Social Media Start ------------------------------------------------------------------------------>
+<div class="section1">
+    <section class="image-section">
+        <div class="image-container">
+            <img src="{% static '/img/Chakra.png' %}" alt="Ice Cream">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img
+                    src="{% static '/img/facebook.png' %}"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img
+                    src="{% static 'img/instagram.png' %}"
+                    alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img
+                    src="{% static 'img/youtube.png' %}"
+                    alt="YouTube"></a>
+        </div>
+    </section>
+</div>
+<!---------------------------------------------------------------- Img & Social Media End ------------------------------------------------------------------------------>
+{% endblock 'main' %}
+
+
+

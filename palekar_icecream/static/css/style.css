@@ -1,0 +1,777 @@
+/*--------------------Body-------------------*/
+body {
+    background-color: #ffffff;
+}
+
+/*--------------------Navbar-------------------*/
+.navfirst {
+    background-color: #90d5ac;
+    padding-left: 3%;
+}
+
+.logo {
+    padding: 0%;
+}
+
+.nav3 {
+    float: right;
+}
+
+.nav-link {
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    color: white;
+    overflow: hidden;
+    margin-left: 15px;
+
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+}
+
+
+
+/*--------------------Heading-------------------*/
+h1 {
+    font-family: "Baskervville", serif;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+/*--------------------Category Section-------------------*/
+.category {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    height: 50px;
+}
+
+.img1 {
+    float: left;
+    transition: all ease-in-out 0.4s;
+}
+
+.img1:hover {
+    transform: translateY(-10px);
+}
+
+.img2 {
+    float: right;
+    transition: all ease-in-out 0.4s;
+}
+
+.img2:hover {
+    transform: translateY(-10px);
+}
+
+.img12 {
+    float: left;
+}
+
+.img21 {
+    float: left;
+}
+
+/*--------------------Fruit N Nut Section-------------------*/
+.fruits {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    height: 50px;
+}
+
+
+/*--------------------Cards Alignment-------------------*/
+.cards {
+    display: flex;
+    transition: all ease-out 0.4s;
+
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.cards .card {
+    margin: 25px;
+}
+
+.card {
+    /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+    border: none;
+}
+
+.card-body {
+    justify-content: center;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+}
+
+/*--------------------Carousel Button of card-------------------*/
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #90d5ac;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 30%;
+}
+
+.viewmore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+
+    background-color: transparent;
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 1);
+    outline: 0;
+    transition: all .2s ease;
+    text-decoration: none;
+}
+
+.viewmore-button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.btn1 {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    height: 50px;
+}
+
+/*--------------------Order Now -------------------*/
+.order-now {
+    background-color: #e1a06e;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.order-now h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos img {
+    max-width: 150px;
+    height: auto;
+}
+
+/*--------------------Img & Social Media-------------------*/
+.section1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: white;
+}
+
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 300px;
+    height: 300px;
+    transition: transform 1.5s;
+}
+
+.image-container img:hover {
+    transform: rotate(180deg);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/*--------------------Footer-------------------*/
+.footer {
+    background-color: #e1a06e;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------our story-------------------*/
+.our-story {
+    background: url('/static/img/hero_inner.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    float: left;
+    height: 650px;
+}
+
+.content {
+    /* float: right; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.our-story h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.our-story p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*--------------------our process-------------------*/
+.our-process {
+    background-color: #f4a261;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.our-process h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.our-process p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*-------------------- Map -------------------*/
+.location {
+    width: 100%;
+}
+
+/*--------------------franchise queries-------------------*/
+.franchise-queries {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.franchise-queries h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.breadcrumb {
+    font-size: 1em;
+    color: #666;
+}
+
+.breadcrumb-active {
+    color: #2ca02c;
+}
+
+.note {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.note h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.note ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.note ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.general-information {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.general-information h1 {
+    font-size: 2em;
+    color: #2ca02c;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form select {
+    width: calc(100% - 40px);
+    max-width: 700px;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+form .address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .address input,
+form .address select {
+    flex: 1;
+    min-width: calc(50% - 10px);
+    margin: 10px 5px;
+}
+
+form .address select {
+    padding-right: 20px;
+}
+
+.button-3 {
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    height: 50px;
+    width: 150px;
+    margin-top: 8px;
+    box-shadow: rgba(27, 31, 35, .1) 0 2px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-3:hover {
+    background-color: #2c974b;
+}
+
+/*--------------------Fruit N nut-------------------*/
+.flavour-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.flavours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.flavour-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.con1 {
+    background-color: #f79522;
+    padding: 40px 20px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.con2 {
+    background-color: #af4554;
+    padding: 40px 20px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.text {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.text h1 {
+    font-size: 3em;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+}
+
+.text p {
+    font-size: 1.5em;
+    color: white;
+}
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-family: "Urbanist", sans-serif;
+    line-height: 13.5px;
+    padding: 1.2em 2em;
+    font-size: .9em;
+
+}
+
+.btn-custom:hover {
+    background-color: #333;
+    color: white;
+}
+
+.image-container1 {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.image-container1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.5em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    .btn-custom {
+        margin-bottom: 10px;
+    }
+   
+}
+
+/*--------------------Login form-------------------*/
+.loged {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f7fa;
+    background: url('/static/img/bannner-transformed1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.loged1 {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#80c4df;
+    background: url('/static/img/bannner-transformed1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.login-back{
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 20px;  
+    margin-left:50%;  
+}
+.login-back label{
+    font-weight: 500;  
+}
+.login-back input, .login-back textarea{
+    background: rgba(255, 255, 255, 0.219);
+}
+
+@media (max-width:780px) {
+    .login-back{
+        margin-left:0%
+    }
+}
+
+
+.login-form {
+    background: rgba(255, 255, 255, 0.219);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.login-form input {
+    background: rgba(255, 255, 255, 0.219);
+}
+.login-form textarea {
+    background: rgba(255, 255, 255, 0.219);
+}
+
+.login-form h2 {
+    color: #333;
+}
+
+.login-form button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+}
+
+.login-form button:hover {
+    background-color: #3f51b5;
+}
+
+/* .illustration {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .illustration {
+        display: block;
+        max-width: 400px;
+        margin-right: 50px;
+    }
+} */
+
+.text-primary-custom {
+    color: #5c6bc0 !important;
+}
+.btn-block{
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.btn-block:hover{
+    background-color: #5c6bc0;
+    color: black;
+}
+
+/*--------------------Cart-------------------*/
+.shopping-cart {
+    padding: 20px;
+}
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.cart-summary {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+.cart-summary h5 {
+    font-weight: bold;
+}
+.cart-summary .form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+.cart-summary .form-control:focus {
+    box-shadow: none;
+}
+.btn-checkout {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.btn-checkout:hover {
+    background-color: #444;
+}
+
+/*--------------------Product Details-------------------*/
+.bgr {
+    background-color: #ffad45;
+    color: white;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+}   
+/*--------------------Pay secton-------------------*/
+.payment-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.payment-method img {
+    width: 110px;
+    height: auto;
+    margin-right: 10px;
+}
+.proceed-btn {
+    background-color: rgb(225,30,70); /* Custom color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.proceed-btn:hover {
+    background-color: #c51e55; /* Darker shade */
+}
+
+
+/*--------------------Payment successfull-------------------*/
+.payment-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.payment-card .icon {
+    font-size: 50px;
+    color: #f39200;
+}
+.payment-card h3 {
+    color: #f39200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.payment-card p {
+    margin: 0;
+    padding: 0;
+}
+.payment-card .details {
+    text-align: left;
+    margin-top: 20px;
+}
+.payment-card .details p {
+    margin: 0;
+    padding: 5px 0;
+}
+.payment-card .footer {
+    text-align: left;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+
+
+
+

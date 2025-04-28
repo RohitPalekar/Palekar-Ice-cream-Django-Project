@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Fruit N Nut Start ------------------------------------------------------------------------------>
+<section>
+    <div class="d-flex justify-content-center" ><img src="{% static 'img/International-Premium.png' %}" alt="Fruit N Nut"></div>
+    <div class="container">
+        <div class="flavour-title">
+            <h1>&#8592; Other Flavours &#8594;</h1>
+        </div>
+        <div class="flavours">
+            <div class="flavour-item">
+                <a href="/fruitnnut"><img src="{% static 'img/fruit_n_nut.png' %}" alt="Flavour 1"></a>
+            </div>
+            <div class="flavour-item">
+                <a href="/internationalclassic"><img src="{% static 'img/international_c.png' %}" alt="Flavour 2"></a>
+            </div>
+            <div class="flavour-item">
+                <a href="/indianinspiration"><img src="{% static 'img/indian_i.png' %}" alt="Flavour 3"></a>
+            </div>
+            <div class="flavour-item">
+                <a href="/superpremium"><img src="{% static 'img/super_p.png' %}" alt="Flavour 4"></a>
+            </div>
+            <!-- <div class="flavour-item">
+                <img src="{% static 'img/international_p.png' %}" alt="Flavour 5">
+            </div> -->
+        </div>
+    </div>
+    <br>
+     <!---------------------------------- Product start ---------------------------------->
+    {% for i in data %}
+    {% if forloop.counter|divisibleby:2 %}
+    <!---------------------------------- Product 1 ---------------------------------->
+    <div
+        class="container-fluid con2 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="image-container1">
+            <img src="{{i.pic.url}}"
+                alt="Alphonso Mango Ice Cream">
+        </div>
+        <div class="text mb-4 mb-lg-0">
+            <h1 class="headf">{{i.iname}}</h1>
+            <p>{{i.desc}}</p>
+            <div class="buttons2">
+                <p>Price : &#x20B9;{{i.price}}</p>
+                <a href="/icecreamdetails/{{i.id}}" class="btn btn-custom">VIEW DETAILS</a>
+                <a href="/ordernow/{{i.id}}" class="btn btn-custom">ORDER NOW</a>
+            </div>
+        </div>
+    </div>    
+    {% else %}
+    <!---------------------------------- Product 2 ---------------------------------->
+    <div
+        class="container-fluid con1 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="text mb-4 mb-lg-0">
+            <h1 class="headf">{{i.iname}}</h1>
+            <p>{{i.desc}}</p>
+            <div class="buttons2">
+                <p>Price : &#x20B9;{{i.price}}</p>
+                <a href="/icecreamdetails/{{i.id}}" class="btn btn-custom">VIEW DETAILS</a>
+                <a href="/ordernow/{{i.id}}" class="btn btn-custom">ORDER NOW</a>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="{{i.pic.url}}"
+                alt="Alphonso Mango Ice Cream">
+        </div>
+    </div>
+    {% endif %}
+
+    {% endfor %}
+    <!---------------------------------- Product End ---------------------------------->
+
+</section>
+<!---------------------------------------------------------------- Fruit N Nut End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

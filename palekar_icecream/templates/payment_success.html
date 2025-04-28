@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block 'main' %}
+<div class="payment-card">  
+    <div class="fa fa-check-circle icon"></div> <!-- Placeholder for icon -->
+    <h3>Payment received</h3>
+    {% for i in data %}
+    <p>Hi {{i.first_name}},</p>
+    {% endfor %}    
+    <p>Your transaction was successful!</p>
+    <div class="details">
+        <p><strong>Payment Details:</strong></p>
+        <p>Amount: &#8377;{{total}}</p>
+        {% for i in data1 %}
+        <p>Contact No: {{i.mobile}}</p>
+        <p>Delivery Address: {{i.address}} </p>
+        {% endfor %}
+        <p>Order will be deliverd soon</p>
+        <p>We advise to keep this email for future reference.</p>
+    </div>
+    <div class="footer">
+        <p>Order Placed Succesfully</p>
+    </div>
+</div>
+{% endblock 'main' %}

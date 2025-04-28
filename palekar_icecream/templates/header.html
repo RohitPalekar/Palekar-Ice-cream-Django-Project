@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palekar Icecream</title>
+        <!---------------------------------------------------------------- Favicon Image Included ------------------------------------------------------------------------------>
+        <link rel="icon" href="{% static '/img/logo.png' %}" type="image/png">
+        
+
+        <!---------------------------------------------------------------- Bootstrap Included ------------------------------------------------------------------------------>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!---------------------------------------------------------------- Google Font (1) Included ------------------------------------------------------------------------------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <!---------------------------------------------------------------- Google Font (2) Included ------------------------------------------------------------------------------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
+            rel="stylesheet">
+        <!---------------------------------------------------------------- Google Font (3) Included ------------------------------------------------------------------------------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet">
+        <!---------------------------------------------------------------- Google Font (4) Included ------------------------------------------------------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!---------------------------------------------------------------- CSS Included ------------------------------------------------------------------------------>
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        
+    </head>
+    <body>
+        <!---------------------------------------------------------------- Navbar Start ------------------------------------------------------------------------------>
+        <nav class="navbar navbar-expand-lg navfirst">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="/index">
+                    <img src="{% static '/img/logo.png' %}" alt="Ice Cream Logo"
+                        class="logo" height="100px">
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page"
+                            href="/index">Home</a>
+                        <a class="nav-link" href="/ourstory">Our Story</a>
+                        <!-- <a class="nav-link" href="/flavours">Flavours</a> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Flavours
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/fruitnnut">Fruit-N-Nut</a></li>
+                                <li><a class="dropdown-item" href="/indianinspiration">Indian-Inspiration</a></li>
+                                <li><a class="dropdown-item" href="/internationalpremium">International-Premium</a></li>
+                                <li><a class="dropdown-item" href="/internationalclassic">International-Classic</a></li>
+                                <li><a class="dropdown-item" href="/superpremium">Super-Premium</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link" href="/locations">Location</a>
+                        <a class="nav-link"
+                            href="/franchisequeries">Franchise Queries</a>
+                         
+                        {% if user.is_authenticated %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                {{user}}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/user_profile">View Profile</a></li>
+                                <li><a class="dropdown-item" href="/cart">My Cart</a></li>
+                                <li><a class="dropdown-item" href="/orderhistory">My Orders</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                        {% else %}
+                        <a class="nav-link" href="/signup">SignUp</a>
+                        <a class="nav-link" href="/login">Login</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!---------------------------------------------------------------- Navbar End ------------------------------------------------------------------------------>

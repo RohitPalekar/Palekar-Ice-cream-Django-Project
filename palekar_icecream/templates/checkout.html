@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Cart Start ------------------------------------------------------------------------------>
+<div class="container shopping-cart">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Shopping Cart</h2>
+            {% for i in data %}
+            <div class="row">
+                <div class="cart-item row">
+                    <div class="col-md-2">
+                        <img src="{{i.iid.pic.url}}"
+                            alt="Shirt" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <h5>{{i.iid.iname}}</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+
+                            </div>
+                            <input type="text" class="form-control text-center"
+                                value="{{i.qty}}" disabled>
+                            <div class="input-group-append">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p> &#8377; {{i.iid.price}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- <a href="/" class="btn btn-link">&larr; Back to shop</a> -->
+        </div>
+
+        <div class="col-md-4">
+            <div class="cart-summary">
+                {% for i in data1 %}
+                <h5>Summary :-</h5>
+                <p>Shipping Address: {{i.address}}</p>
+                <p>Contact No: {{i.mobile}}</p>
+                {% endfor %}
+                <p>Total Items: {{n}} </p>
+                <h5>Total Price: <span class="float-right"> &#8377;
+                        {{total}}</span></h5>
+                <a href="/makepayments" class="btn btn-checkout">Make
+                    Payment</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------- Cart End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

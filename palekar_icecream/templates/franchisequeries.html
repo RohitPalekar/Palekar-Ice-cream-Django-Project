@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- franchise queries ------------------------------------------------------------------------------>
+<section class="franchise-queries">
+    <h1>FRANCHISE QUERIES</h1>
+    <div class="note">
+        <h3>Kindly note:</h3>
+        <ul>
+            <li>All queries will be deal with through email only.</li>
+            <li>Due to a large demand for our franchise, it is not always
+                possible to attend to telephone calls regarding franchise
+                queries. We request you to kindly avoid queries over the
+                telephone.</li>
+            <li>Criteria mentioned on our website is a pre-requisite and the
+                franchise form shall only be filled and submitted if you think
+                you fit in the criteria provided.</li>
+            <li>Submitting the franchise form doesn’t guarantee a franchise
+                allotment. It is for registering and keeping track of all
+                queries. The Company and the promoters are under no obligation
+                to consider your request and shall act on their absolute
+                discretion in allotting franchises.</li>
+        </ul>
+    </div>
+</section>
+<section class="general-information">
+    {% if success %}
+    <div class="alert alert-success d-flex align-items-center"
+        role="alert">{{success}}</div>
+    {% endif %}
+    <h1>GENERAL INFORMATION</h1>
+
+    <form method="post" action="/franchisequeries">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone">
+        <div class="address">
+            <input type="text" name="street" placeholder="Street">
+            <select name="state" required>
+                <option value disabled selected>Select State</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Goa">Goa</option>
+            </select>
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="pincode" placeholder="Pincode">
+        </div>
+        <button class="button-3" role="button">Submit</button>
+
+    </form>
+</section>
+<!---------------------------------------------------------------- franchise queries ------------------------------------------------------------------------------>
+<!---------------------------------------------------------------- Img & Social Media Start ------------------------------------------------------------------------------>
+<div class="section1">
+    <section class="image-section">
+        <div class="image-container">
+            <img src="{% static '/img/Chakra.png' %}" alt="Ice Cream">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img
+                    src="{% static '/img/facebook.png' %}"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img
+                    src="{% static 'img/instagram.png' %}"
+                    alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img
+                    src="{% static 'img/youtube.png' %}"
+                    alt="YouTube"></a>
+        </div>
+    </section>
+</div>
+<!---------------------------------------------------------------- Img & Social Media End ------------------------------------------------------------------------------>
+
+{% endblock 'main' %}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Cart Start ------------------------------------------------------------------------------>
+<div class="container shopping-cart">
+
+    {% if errzero %}
+    <div class="row">
+        <h2>Shopping Cart</h2>
+        <div class="col-md-12">
+            <div class="alert alert-danger d-flex align-items-center"
+                role="alert">{{errzero}}</div>
+            <div class="btn1">
+                <a class="viewmore-button" href="/fruitnnut">
+                    <span class="text-2">Shop</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="row">
+        <h2>Shopping Cart</h2>
+        <div class="col-md-8">
+            {% for i in data %}
+            <div class="row">
+                <div class="cart-item row">
+                    <div class="col-md-2">
+                        <img src="{{i.iid.pic.url}}"
+                            alt="Shirt" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <h5>{{i.iid.iname}}</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <a href="updateqty/0/{{i.id}}"
+                                    class="btn btn-outline-info">
+                                    <b>-</b>
+                                </a>
+                            </div>
+                            <input type="text" class="form-control text-center"
+                                value="{{i.qty}}" disabled>
+                            <div class="input-group-append">
+                                <a href="updateqty/1/{{i.id}}"
+                                    class="btn btn-outline-info">
+                                    <b>+</b>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p> &#8377; {{i.iid.price}}</p>
+                    </div>
+                    <div class="col-md-1 text-right">
+                        <a href="remove/{{i.id}}"
+                            class="btn btn-danger btn-sm">&times;</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- <a href="/" class="btn btn-link">&larr; Back to shop</a> -->
+        </div>
+
+        <div class="col-md-4">
+            <div class="cart-summary">
+                <h5>Summary :-</h5>
+                <p>Total Items: {{n}} </p>
+                <h5>Total Price: <span class="float-right"> &#8377;
+                        {{total}}</span></h5>
+                <a href="/checkout" class="btn btn-checkout">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<!---------------------------------------------------------------- Cart End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

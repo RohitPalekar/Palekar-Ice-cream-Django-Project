@@ -1,0 +1,47 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Map Start ------------------------------------------------------------------------------>
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2055100338193!2d73.83845847427064!3d18.519612969205358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3ec1207915%3A0xb73335cd0d52335c!2sItvedant%20Education%20Pvt%20Ltd%20Pune!5e0!3m2!1sen!2sin!4v1721316988638!5m2!1sen!2sin"
+height="450" style="border:0;" allowfullscreen
+loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location"></iframe>
+
+<!---------------------------------------------------------------- Map end ------------------------------------------------------------------------------>
+<!---------------------------------------------------------------- Order Now Start ------------------------------------------------------------------------------>
+<section class="order-now">
+    <h1 class="fruits">&#8592; Order Now &#8594;</h1>
+    <div class="logos">
+        <a target="_blank" href="https://dotpe.in/"><img src="{% static 'img/DotPe.png' %}" alt="DotPe"></a>
+        <a target="_blank" href="https://www.swiggy.com/"><img src="{% static 'img/Swiggy.png' %}" alt="Swiggy"></a>
+        <a target="_blank" href="https://www.zomato.com/"><img src="{% static 'img/Zomato.png' %}" alt="Zomato"></a>
+        <a target="_blank" href="https://blinkit.com/"><img src="{% static 'img/BlinkIt.png' %}" alt="Blinkit"></a>
+        <a target="_blank" href="https://www.swiggy.com/instamart"><img src="{% static 'img/SwiggyInstamart.png' %}" alt="Swiggy Instamart"></a>
+        <a target="_blank" href="https://www.amazon.in/"><img src="{% static 'img/Amazon.png' %}" alt="Amazon"></a>
+        <a target="_blank" href="https://www.bigbasket.com/"><img src="{% static 'img/BigBasket.png' %}" alt="BigBasket"></a>
+        <a target="_blank" href="https://www.zeptonow.com/"><img src="{% static 'img/Zepto.png' %}" alt="Zepto"></a>
+        <a target="_blank" href="https://gofrogo.in/"><img src="{% static 'img/Frogo.png' %}" alt="Frogo"></a>
+    </div>
+</section>
+<!---------------------------------------------------------------- Order Now End ------------------------------------------------------------------------------>
+<!---------------------------------------------------------------- Img & Social Media Start ------------------------------------------------------------------------------>
+<div class="section1">
+    <section class="image-section">
+        <div class="image-container">
+            <img src="{% static '/img/Chakra.png' %}" alt="Ice Cream">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img
+                    src="{% static '/img/facebook.png' %}"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img
+                    src="{% static 'img/instagram.png' %}"
+                    alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img
+                    src="{% static 'img/youtube.png' %}"
+                    alt="YouTube"></a>
+        </div>
+    </section>
+</div>
+<!---------------------------------------------------------------- Img & Social Media End ------------------------------------------------------------------------------>
+{% endblock 'main' %}

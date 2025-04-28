@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<!---------------------------------------------------------------- Icecream Details Start ------------------------------------------------------------------------------>
+<section class="bgr">
+    <div class="container">
+        {% for i in data %}
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{{i.pic.url}}" alt="{{i.iname}}"
+                    class="product-image">
+            </div>
+            <div class="col-md-6 gy-5 pb-3">
+                <h1 class="text-center">{{i.iname}} Ice Cream</h1>
+                <p class="text-center">{{i.det_desc}}</p>
+                <p class="text-center">                 
+                    <a href="/cart" class="btn btn-custom">VIEW CART</a>
+                    <a href="/ordernow/{{i.id}}" class="btn btn-custom">ORDER
+                        NOW</a>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!---------------------------------------------------------------- Icecream Details End ------------------------------------------------------------------------------>
+{% endblock 'main' %}
