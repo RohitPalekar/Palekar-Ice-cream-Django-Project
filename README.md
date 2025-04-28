@@ -45,6 +45,12 @@ Built using **HTML, CSS, Bootstrap, JavaScript, MySQL, Python, Django** with **R
 
 ---
 
+## 💳 Payment Done
+![Payment done](images/payment%20done-img.png)
+
+
+---
+
 ## 🚀 Features
 
 - 🛒 Browse and order a wide range of ice-creams
